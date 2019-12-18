@@ -6,8 +6,6 @@ import {
   Button,
   Table,
   Input,
-  DatePicker,
-  Modal,
 } from "antd"
 import { withRouter } from "react-router-dom"
 import { PAGE_PAGESIZE } from "@/constant/constant"
@@ -86,14 +84,7 @@ class CreateAuthorition extends Component {
         }
       },
       {
-        title: "适用年级",
-        dataIndex: "className",
-        renderDom: (form, record) => {
-          return <span>{record.className}</span>
-        }
-      },
-      {
-        title: "授权数量",
+        title: "数量",
         dataIndex: "classList",
         key: "classList",
         renderDom: (form, record) => {
@@ -144,7 +135,7 @@ class CreateAuthorition extends Component {
         }
       },
       {
-        title: "学校类别",
+        title: "学校名称",
         dataIndex: "schoolTypeName",
         key: "schoolTypeName",
         renderDom: (form, record) => {
@@ -152,15 +143,7 @@ class CreateAuthorition extends Component {
         }
       },
       {
-        title: "学校名称",
-        dataIndex: "unitName",
-        key: "unitName",
-        renderDom: (form, record) => {
-          return <span>{record.unitName}</span>
-        }
-      },
-      {
-        title: "授权数量",
+        title: "数量",
         dataIndex: "classList",
         key: "classList",
         renderDom: (form, record) => {
